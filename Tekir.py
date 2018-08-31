@@ -98,73 +98,8 @@ async def on_message(message):
             'https://thumb.ibb.co/naUOb7/uskumru.jpg \n Uskumru Tuttun',
         ]
         await client.send_message(message.channel, random.choice(possible_responses))
-    if message.content.startswith('tk!baliktut'):
-        possible_responses = [
-            ':fish: Çupra Tuttun',
-            'Balık Tutamadın',
-            'Balık Tutamadın',
-            'Balık Tutamadın',
-            'Balık Tutamadın',
-            'Balık Tutamadın',
-            ':blowfish: Alabalık Tuttun',
-            ':blowfish: Hamsi Tuttun',
-            ':fish: İstavrit Tuttun',
-            ':tropical_fish: Lüfer Balığı Tuttun',
-            ':fish: Palamut Tuttun',
-            ':blowfish: Uskumru Tuttun',
-        ]
-     if message.content.startswith('Selamın Aleyküm'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
-     if message.content.startswith('Selamın aleyküm'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
-     if message.content.startswith('selamın Aleyküm'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
-     if message.content.startswith('selamın aleyküm'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
-     if message.content.startswith('Sa'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
-     if message.content.startswith('sa'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
-     if message.content.startswith('s.a'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
-     if message.content.startswith('SA'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
-     if message.content.startswith('s.A'):
-        possible_responses = [
-            'Aleyküm Selam',
-            'Vay Aleyküm Selam Ya Nerelerdeydin Öyle',
-        ]
-        await client.send_message(message.channel, random.choice(possible_responses))
+
+  
+    
+        
 client.run(TOKEN) 
