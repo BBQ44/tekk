@@ -119,5 +119,9 @@ async def on_message(message):
    
     if message.content.startswith('s.a'):
         await client.send_message(message.channel, 'Aleyküm Selam')
+    if message.content.startswith('İyi Geceler'):
+        await client.send_message(message.channel, 'Saol Sanada')
+    if message.content.startswith('iyi geceler'):
+        await client.send_message(message.channel, 'Saol Sanada')
   
 client.run(TOKEN) 
