@@ -36,7 +36,7 @@ async def on_message(message):
 
 
     if message.content.startswith('tk!yardım'):
-        await client.send_message(message.author, ' **tk!zar**:*Zar Atar*.\n**tk!foto**:*Fotoğraflarım*\n**tk!espri**:*Espri Yapayım*.\n**tk!baliktut**:*Balık Mı Tutuyorsun?*')
+        await client.send_message(message.author, ' **tk!zar**:*Zar Atar*.\n**tk!foto**:*Fotoğraflarım*\n**tk!hizmet**:*Hizmetten Memnun Kaldımmı Dur Bi Düşüneyim*\n**tk!espri**:*Espri Yapayım*.\n**tk!baliktut**:*Balık Mı Tutuyorsun?*')
     if message.content.startswith('tk!foto'):
         possible_responses = [
             'https://thumb.ibb.co/km79VS/Foto_raf0228.jpg',
