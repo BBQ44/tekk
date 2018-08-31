@@ -15,7 +15,7 @@ async def on_ready():
     print ("Hazırım!!!")
     print ("Başlıyorum!!! " + client.user.name)
     print ("ID: " + client.user.id) 
-    await client.change_presence(game=discord.Game(name='?yardım'))
+    await client.change_presence(game=discord.Game(name='tk!yardım'))
 
 @client.event
 async def on_message(message):
