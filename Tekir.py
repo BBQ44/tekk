@@ -6,38 +6,10 @@ import random
 from discord.ext.commands import Bot
 from discord.ext import commands
 
-BOT_PREFIX = "?"
+BOT_PREFIX = "tk!"
 TOKEN = "NDIzODIyMjYyNjY4NjIzODcy.DZ--vQ.IKcVC8NiqlZbLVIxOCz7btxaUsg"
 
 client = Bot (command_prefix=BOT_PREFIX)
-
-print (discord.__version__)
-await client.send_message(message.channel, random.choice(possible_responses))
-@client.command(name='Avatar', pass_context=True)
-async def avatar(url, member: discord.Member = None):
-    embed = discord.Embed(title="Resim")
-    embed.set_image(url=member.avatar_url)
-    await client.say(embed=embed)
-
-
-killResponses = [" Yere Çakılarak Öldü " , " Elektrik Akımından Öldü ", " Silahla Vurularak Öldü " , " Kuduzdan Öldü" , " Kan Kaybından Öldü " , " Yaşlılıktan Öldü " , " Hastalıktan Öldü " , " Soğuk Esprilerden Öldü " , " Donarak Öldü " , " Aşırı Sıcaktan Öldü " , " Balinaların Yanına Atılarak Öldü" , "Death Note'ye Yazılarak Öldü"
-]
-@client.command(name='kill',
-                description="Açıklama",
-                pass_context = True)
-async def kill(ctx, *, member : discord.Member = None):
-    if member is None:
-        await client.say(ctx.message.author.mention + "Birini Etiketle")
-        return
-
-    if member.id == "423822262668623872":
-        await client.say(ctx.message.author.mention + " Beni Mi Öldürüceksin")
-    elif member.id == ctx.message.author:
-        await client.say(ctx.message.author.mention + "YAZI2")
-    else:
-        random.seed(time.time())
-        chosenResponse = killResponses[random.randrange(len(killResponses))]
-        await client.say("{}".format(member.name) + chosenResponse)
 @client.event
 async def on_ready():
     print ("Hazırım!!!")
@@ -50,7 +22,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('?zar'):
+    if message.content.startswith('tk!zar'):
         possible_responses = [
             '`1`Düştü',
             '`6`Düştü',
@@ -63,11 +35,9 @@ async def on_message(message):
 
 
 
-    if message.content.startswith('?yardım'):
-        await client.send_message(message.author, ' **?zar=Zar**\n**?espri=Espri Yapar**\n**?Avatar @ = Etiketlenen Kullanıcının Avatarını Gösterir.**\n**?foto = Benim Fotoğraflarımı Gösterir**\n**?kill @=Etiketlenen Kişiyi Öldürür.**\n**?hizmet = Hizmetten Memnun Kalıp Kalmadığımı Söyler**\n**?baliktut = Balık Tutar (*Banada Verirsiniz Bir Balık :stuck_out_tongue_winking_eye:*)**\n**?balıktut = Balıkları Gerçek Resimleriyle Tutar.**')
-    if message.content.startswith('?help'):
-        await client.send_message(message.author, ' **?zar=Zar**\n**?espri=Espri Yapar**\n**?Avatar @ = Etiketlenen Kullanıcının Avatarını Gösterir.**\n**?foto = Benim Fotoğraflarımı Gösterir**\n**?kill @=Etiketlenen Kişiyi Öldürür.**\n**?hizmet = Hizmetten Memnun Kalıp Kalmadığımı Söyler**\n**?baliktut = Balık Tutar (*Banada Verirsiniz Bir Balık :stuck_out_tongue_winking_eye:*)**\n**?balıktut = Balıkları Gerçek Resimleriyle Tutar.**')
-    if message.content.startswith('?foto'):
+    if message.content.startswith('tk!yardım'):
+        await client.send_message(message.author, ' **tk!zar**:*Zar Atar*.\n**tk!foto**:*Fotoğraflarım*\n**tk!espri**:*Espri Yapayım*.\n**tk!baliktut**:*Balık Mı Tutuyorsun?*')
+    if message.content.startswith('tk!foto'):
         possible_responses = [
             'https://thumb.ibb.co/km79VS/Foto_raf0228.jpg',
             'https://thumb.ibb.co/k17hjn/Foto_raf0222.jpg',
@@ -81,7 +51,7 @@ async def on_message(message):
         ]
         await client.send_message(message.channel, random.choice(possible_responses))
 
-    if message.content.startswith('?espri'):
+    if message.content.startswith('tk!espri'):
         possible_responses = [
             'Kar üzerinde yürüyen adama ne denir. Karabasan.',
             'Yıkanan Ton’a ne denir? Washington!',
@@ -102,7 +72,7 @@ async def on_message(message):
         ]
         await client.send_message(message.channel, random.choice(possible_responses))
 
-    if message.content.startswith('?hizmet'):
+    if message.content.startswith('tk!hizmet'):
         possible_responses = [
             'Gayet İyiydi',
             'İyiydi',
@@ -112,7 +82,7 @@ async def on_message(message):
             'Çok Kötü',
         ]
         await client.send_message(message.channel, random.choice(possible_responses))
-    if message.content.startswith('?balıktut'):
+    if message.content.startswith('tk!balıktut'):
         possible_responses = [
             'https://thumb.ibb.co/j01Y9S/upra.jpg \n Çupra Tuttun',
             'Balık Tutamadın',
@@ -128,7 +98,7 @@ async def on_message(message):
             'https://thumb.ibb.co/naUOb7/uskumru.jpg \n Uskumru Tuttun',
         ]
         await client.send_message(message.channel, random.choice(possible_responses))
-    if message.content.startswith('?baliktut'):
+    if message.content.startswith('tk!baliktut'):
         possible_responses = [
             ':fish: Çupra Tuttun',
             'Balık Tutamadın',
