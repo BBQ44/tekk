@@ -99,25 +99,25 @@ async def on_message(message):
         ]
         await client.send_message(message.channel, random.choice(possible_responses))
     if message.content.startswith('Selamın Aleyküm'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('Selamın aleyküm'):  
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('selamın aleyküm'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('selamın Aleyküm'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('SA'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('Sa'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('sA'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('S.a'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('sa'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
    
     if message.content.startswith('s.a'):
-        await client.send_message(message.author, 'Aleyküm Selam')
+        await client.send_message(message.channel, 'Aleyküm Selam')
   
 client.run(TOKEN) 
