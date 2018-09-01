@@ -134,6 +134,9 @@ async def on_message(message):
         await client.send_message(message.channel, 'Amin')
     if message.content.startswith('Allah iyilik Versin'):
         await client.send_message(message.channel, 'Amin')
+        a = input("Deneme sdaSdaSda")
+          if a=='Evet'
+            await client.send.message(message.channel. 'Amin')
     if message.content.startswith('allah'):
         await client.send_message(message.channel, "Allah'ın A'sı Büyük Yazılır")
                                 
