@@ -6,8 +6,8 @@ import random
 from discord.ext.commands import Bot
 from discord.ext import commands
 
-BOT_PREFIX = "NDIzODIyMjYyNjY4NjIzODcy.DZ--vQ.IKcVC8NiqlZbLVIxOCz7btxaUsg"
-TOKEN = ""
+BOT_PREFIX = "tk!"
+TOKEN = "NDIzODIyMjYyNjY4NjIzODcy.DZ--vQ.IKcVC8NiqlZbLVIxOCz7btxaUsg"
 
 client = Bot (command_prefix=BOT_PREFIX)
 @client.event
