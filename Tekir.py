@@ -33,7 +33,7 @@ async def on_message(message):
         ]
         await client.send_message(message.channel, random.choice(possible_responses))
     if message.content.startwith('tk!vur')
-        await client.send_message(message.author, @client.user' Olmaz Bunu Yapamam.')
+        await client.send_message(message.channel, @client.user' Olmaz Bunu Yapamam.')
 
 
     if message.content.startswith('tk!yardım'):
