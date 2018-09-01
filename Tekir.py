@@ -6,7 +6,7 @@ import random
 from discord.ext.commands import Bot
 from discord.ext import commands
 
-BOT_PREFIX = "tk!"
+BOT_PREFIX = "NDIzODIyMjYyNjY4NjIzODcy.DZ--vQ.IKcVC8NiqlZbLVIxOCz7btxaUsg"
 TOKEN = ""
 
 client = Bot (command_prefix=BOT_PREFIX)
