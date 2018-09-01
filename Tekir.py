@@ -15,17 +15,7 @@ async def on_ready():
     print ("Hazırım!!!")
     print ("Başlıyorum!!! " + client.user.name)
     print ("ID: " + client.user.id)
-    if message.content.startswith('tk!change'):
-        possible_responses = [
-            '`1`Düştü',
-            '`6`Düştü',
-            '`5`Düştü',
-            '`4`Düştü',
-            '`3`Düştü',
-            '`2`Düştü',
-        ]
-
-    await client.change_presence(game=discord.Game(name=possible_responses))
+    
 
 @client.event
 async def on_message(message):
@@ -42,7 +32,8 @@ async def on_message(message):
             '`2`Düştü',
         ]
         await client.send_message(message.channel, random.choice(possible_responses))
-
+    if message.content.startwith('tk!vur')
+        await client.send_message(message.author, @client.user' Olmaz Bunu Yapamam.')
 
 
     if message.content.startswith('tk!yardım'):
