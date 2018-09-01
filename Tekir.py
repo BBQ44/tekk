@@ -106,16 +106,9 @@ async def on_message(message):
         await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('selamın Aleyküm'):
         await client.send_message(message.channel, 'Aleyküm Selam')
-    if message.content.startswith('SA'):
-        await client.send_message(message.channel, 'Aleyküm Selam')
-    if message.content.startswith('Sa'):
-        await client.send_message(message.channel, 'Aleyküm Selam')
-    if message.content.startswith('sA'):
-        await client.send_message(message.channel, 'Aleyküm Selam')
     if message.content.startswith('S.a'):
         await client.send_message(message.channel, 'Aleyküm Selam')
-    if message.content.startswith('sa'):
-        await client.send_message(message.channel, 'Aleyküm Selam')
+   
    
     if message.content.startswith('iyi geceler'):
         await client.send_message(message.channel, 'Saol Sanada')
