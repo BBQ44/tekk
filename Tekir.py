@@ -7,15 +7,25 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 
 BOT_PREFIX = "tk!"
-TOKEN = "NDIzODIyMjYyNjY4NjIzODcy.DZ--vQ.IKcVC8NiqlZbLVIxOCz7btxaUsg"
+TOKEN = ""
 
 client = Bot (command_prefix=BOT_PREFIX)
 @client.event
 async def on_ready():
     print ("Hazırım!!!")
     print ("Başlıyorum!!! " + client.user.name)
-    print ("ID: " + client.user.id) 
-    await client.change_presence(game=discord.Game(name='Prefix=tk!|Berlin Abisiyle Oynuyor'))
+    print ("ID: " + client.user.id)
+    if message.content.startswith('tk!change'):
+        possible_responses = [
+            '`1`Düştü',
+            '`6`Düştü',
+            '`5`Düştü',
+            '`4`Düştü',
+            '`3`Düştü',
+            '`2`Düştü',
+        ]
+
+    await client.change_presence(game=discord.Game(name=possible_responses))
 
 @client.event
 async def on_message(message):
