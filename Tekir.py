@@ -128,8 +128,17 @@ async def on_message(message):
     if message.content.startswith('İyi geceler'):
         await client.send_message(message.channel, 'Saol Sanada')
     if message.content.startswith('Günaydın'):
-        await client.send_message(message.channel, 'Saol Sanada')
+        await client.send_message(message.channel, 'Saol Sanada.Nasılsın')
     if message.content.startswith('günaydın'):
-        await client.send_message(message.channel, 'Saol Sanada')
+        await client.send_message(message.channel, 'Saol Sanada.Nasılsın')
+    if message.content.startswith('iyi sen'):
+        await client.send_message(message.channel, 'İyiyim Bende.')
+    if message.content.startswith('İyi Sen'):
+        await client.send_message(message.channel, 'İyiyim Bende.')
+    if message.content.startswith('İyi sen'):
+        await client.send_message(message.channel, 'İyiyim Bende')
+    if message.content.startswith('Allah İyilik Versin'):
+        await client.send_message(message.channel, 'Amin')
+                                  
   
 client.run(TOKEN) 
