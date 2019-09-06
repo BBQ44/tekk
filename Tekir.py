@@ -7,7 +7,7 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 
 BOT_PREFIX = "tk!"
-TOKEN ="Vvsl3XiL2KDvhPLC4Rr_DlzlAcjxxHJ3"
+TOKEN ="59gOAxIaGFTW-Rg_f1W2ZjXh20_3WrZf"
 
 client = Bot (command_prefix=BOT_PREFIX)
 @client.event
